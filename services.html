@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiva7Strome&Code</title>
+    <link rel="icon" type="image/png" href="/images/company_logo.png">
+
+    <!-- Bootstrap CSS CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icon CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+
+  <body style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <!-- Navbar -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img src="images/company_logo.png" alt="Company Logo" class="navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Navbar Ends Here -->
+
+
+<!-- Expertise Section Starts -->
+<section class="expertise" id="service">
+  <div class="container">
+    <div class="heading text-center">
+      <h3>Services Offered</h3>
+      <h3 class="text-dark">Empowering Your Business with Professional Support Services</h3>
+      <p class="lead">We provide cutting-edge digital solutions to grow and secure your business.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-container">
+      <div class="service-row">
+        <!-- Web Development -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/web_dev.png" alt="Web Development">
+          <h4>Web Development</h4>
+          <p>We create responsive, high-performance websites tailored to your business needs.  
+             Our team specializes in front-end, back-end, and full-stack web development.  
+             We deliver custom solutions, including corporate websites, portals, and CMS platforms.</p>
+          <button class="read-more-btn" onclick="openModal('modal1')">Read More</button>
+        </div>
+
+        <!-- Software Development -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/software_dev.png" alt="Software Development">
+          <h4>Software Development</h4>
+          <p>From desktop applications to enterprise-grade software, we build scalable solutions.  
+             Our software development expertise covers automation, SaaS applications, and cloud-based platforms.  
+             We focus on security, usability, and efficiency in every software project.</p>
+          <button class="read-more-btn" onclick="openModal('modal2')">Read More</button>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <!-- Website Maintenance -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/website_maintenance.png" alt="Website Maintenance">
+          <h4>Website Maintenance</h4>
+          <p>Ensure your website stays secure, updated, and fully functional.  
+             We offer regular updates, performance optimization, and security patches.  
+             Our maintenance plans keep your site running smoothly, minimizing downtime.</p>
+          <button class="read-more-btn" onclick="openModal('modal3')">Read More</button>
+        </div>
+
+        <!-- IT Support & Consulting -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/it_support.png" alt="IT Support & Consulting">
+          <h4>IT Support & Consulting</h4>
+          <p>We provide expert IT consulting, troubleshooting, and managed services.  
+             Our solutions range from cloud management to on-site IT support.  
+             Let us optimize your infrastructure for maximum efficiency and security.</p>
+          <button class="read-more-btn" onclick="openModal('modal4')">Read More</button>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <!-- E-commerce Solutions -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/ecommerce_solutions.png" alt="E-commerce Solutions">
+          <h4>E-commerce Solutions</h4>
+          <p>Launch and manage your online store with our tailored e-commerce solutions.  
+             We integrate secure payment gateways, user-friendly interfaces, and scalable platforms.  
+             From WooCommerce to Shopify, we help businesses thrive in the digital marketplace.</p>
+          <button class="read-more-btn" onclick="openModal('modal5')">Read More</button>
+        </div>
+
+        <!-- Cybersecurity & Data Protection -->
+        <div class="service-card" data-aos="fade-up">
+          <img src="images/cybersecurity.png" alt="Cybersecurity & Data Protection">
+          <h4>Cybersecurity & Data Protection</h4>
+          <p>Protect your business with our top-tier cybersecurity solutions.  
+             We specialize in penetration testing, data encryption, and threat monitoring.  
+             Secure your systems and prevent cyber threats with our expert services.</p>
+          <button class="read-more-btn" onclick="openModal('modal6')">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<!-- Detailed Service Modals -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Web Development</h2>
+    <p>We create modern, responsive, and high-performing websites using cutting-edge technologies.  
+       Our web development services include:</p>
+    <ul>
+      <li>Custom website design & development</li>
+      <li>Full-stack web development (Frontend & Backend)</li>
+      <li>E-commerce store development (Shopify, WooCommerce, Magento)</li>
+      <li>Web application development & integrations</li>
+      <li>SEO-optimized & mobile-friendly designs</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Software Development</h2>
+    <p>We develop powerful and scalable software solutions tailored to your needs, including:</p>
+    <ul>
+      <li>Enterprise software solutions</li>
+      <li>Cloud-based applications & SaaS platforms</li>
+      <li>Custom business automation tools</li>
+      <li>API development & integration</li>
+      <li>AI & Machine Learning-powered solutions</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Website Maintenance</h2>
+    <p>Our website maintenance services ensure your website remains updated, secure, and optimized:</p>
+    <ul>
+      <li>Regular security updates & patches</li>
+      <li>Performance optimization & speed enhancements</li>
+      <li>Website backups & disaster recovery</li>
+      <li>Fixing broken links & ensuring mobile responsiveness</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2>IT Support & Consulting</h2>
+    <p>We provide expert IT consulting and support to help businesses enhance productivity and security:</p>
+    <ul>
+      <li>Cloud migration & management</li>
+      <li>Server management & network security</li>
+      <li>Helpdesk & remote IT support</li>
+      <li>Technology strategy & IT audits</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal5')">&times;</span>
+    <h2>E-commerce Solutions</h2>
+    <p>From launching an online store to scaling your business, we offer comprehensive e-commerce services:</p>
+    <ul>
+      <li>Custom e-commerce store development</li>
+      <li>Secure payment gateway integration</li>
+      <li>Product management & inventory solutions</li>
+      <li>Sales & marketing automation</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal6')">&times;</span>
+    <h2>Cybersecurity & Data Protection</h2>
+    <p>We offer advanced cybersecurity solutions to protect your business from digital threats:</p>
+    <ul>
+      <li>Network security & penetration testing</li>
+      <li>Data encryption & secure file sharing</li>
+      <li>Threat monitoring & risk management</li>
+      <li>Compliance with GDPR, HIPAA, and ISO security standards</li>
+    </ul>
+  </div>
+</div>
+
+<!-- JavaScript for Modals -->
+<script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "flex";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Close modal when clicking outside of content
+window.onclick = function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+</script>
+
+
+<!-- Case Studies / Success Stories Section -->
+<section class="case-studies" id="case-studies">
+  <div class="container">
+    <div class="heading text-center">
+      <h3>Case Studies & Success Stories</h3>
+      <p class="lead">Explore how our expert digital solutions have transformed businesses across various industries.</p>
+    </div>
+
+    <div class="case-study-container">
+      <!-- Case Study 1: Web Development -->
+      <div class="case-study-card" data-aos="fade-up">
+        <img src="images/case_study_1.png" alt="Case Study 1">
+        <h4>Revolutionizing Online Presence for Retailer</h4>
+        <p>We developed a custom e-commerce platform for a retail client, improving their online sales by <b>35%</b> in just three months. The site’s responsive design, speed optimization, and seamless checkout process led to a significant increase in conversions.</p>
+      </div>
+
+      <!-- Case Study 2: Software Development -->
+      <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/case_study_2.png" alt="Case Study 2">
+        <h4>Streamlining Operations with Custom Software</h4>
+        <p>We built a custom software solution for a logistics company, automating their order processing system and reducing manual errors by <b>50%</b>. The new system improved operational efficiency and reduced costs significantly.</p>
+      </div>
+
+      <!-- Case Study 3: Website Maintenance -->
+      <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/case_study_3.png" alt="Case Study 3">
+        <h4>Enhancing Website Performance & Security</h4>
+        <p>We conducted regular maintenance and optimization for a client's website, improving its page load speed by <b>40%</b> and fixing security vulnerabilities. This resulted in better user engagement and a lower bounce rate.</p>
+      </div>
+
+      <!-- Case Study 4: IT Support & Consulting -->
+      <div class="case-study-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/case_study_4.png" alt="Case Study 4">
+        <h4>Boosting IT Infrastructure for a Growing Firm</h4>
+        <p>We provided ongoing IT support and consulting to a growing firm, helping them scale their infrastructure and improve network security. As a result, the firm experienced <b>zero downtime</b> and better collaboration across teams.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Expertise Showcase Section -->
+<section id="expertise-showcase" class="expertise-showcase section" style="padding: 10px;">
+  
+  <!-- Section Title -->
+  <div class="container expertise-title" data-aos="fade-up" style="margin-bottom: 40px; text-align: center;">
+      <div class="heading text-center">
+        <h3>Our Expertise</h3>
+      </div>
+      <p style="font-size: 16px; color: #666;">
+        Discover the skills and expertise that empower us to deliver cutting-edge digital solutions across industries.
+      </p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row expertise-content">
+          
+          <!-- Left Column -->
+          <div class="col-lg-6">
+              <div class="progress-bar-container">
+                  <span class="progress-title">Full-stack Web Development <i class="val">95%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="95%"></div>
+                  </div>
+              </div>
+
+              <div class="progress-bar-container">
+                  <span class="progress-title">Software & Application Development <i class="val">92%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="92%"></div>
+                  </div>
+              </div>
+
+              <div class="progress-bar-container">
+                  <span class="progress-title">AI & Machine Learning Solutions <i class="val">88%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="88%"></div>
+                  </div>
+              </div>
+
+              <div class="progress-bar-container">
+                  <span class="progress-title">Cloud Computing & DevOps <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="90%"></div>
+                  </div>
+              </div>
+
+              <div class="progress-bar-container">
+                  <span class="progress-title">Cybersecurity & Data Protection <i class="val">93%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="93%"></div>
+                  </div>
+              </div>
+
+              <div class="progress-bar-container">
+                  <span class="progress-title">E-commerce Development & Optimization <i class="val">87%</i></span>
+                  <div class="progress-bar-wrap">
+                      <div class="progress-bar" data-width="87%"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</section>
+<!-- Expertise Showcase Section Ends -->
+
+    <!-- Back to Top Button -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+<!-- Footer Section Starts -->
+<footer class="text-center text-muted py-4">
+  <div class="footer">
+    <div class="footer-container">
+
+      <!-- Company Logo & Name -->
+      <div class="footer-brand">
+        <img
+          src="images/company_logo.png"
+          alt="Company Logo"
+          class="footer-logo"
+        />
+        <h3 class="pt-2" data-aos="fade-up">
+          Shiva7Strome&Code
+        </h3>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="link-group d-flex flex-wrap justify-content-center align-items-center" data-aos="fade-up">
+        <a href="index.html" class="mx-2"><i class="bi bi-house-door"></i> Home</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="about.html" class="mx-2"><i class="bi bi-info-circle"></i> About</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="services.html" class="mx-2"><i class="bi bi-people"></i> Services</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="contact.html" class="mx-2"><i class="bi bi-envelope"></i> Contact Us</a>
+      </div>
+
+      <!-- Footer Sections -->
+      <div class="container">
+        <div class="footer-sections">
+          <!-- Services -->
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="center">
+              <li><a href="web_dev.html">Web Development</a></li>
+              <li><a href="software_dev.html">Software Development</a></li>
+              <li><a href="web_men.html">Website Maintenance</a></li>
+              <li><a href="it_support.html">IT Support & Consulting</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="footer-section">
+            <h3>Our Company</h3>
+            <ul class="center">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul class="center">
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+              <li><a href="corporate.html">Corporate Information</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-section contactus">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-globe"></i> <a href="http://shiva7stromecode.in" target="_blank">www.shiva7stromecode.in</a></p>
+            <p><i class="fas fa-envelope"></i><a href="mailto:shiva7stromecode@gmail.com">shiva7stromecode@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links mt-5" data-aos="fade-up">
+          <button class="rounded-pill instagram" onclick="visitInstagram()" title="Visit Instagram" aria-label="Visit Instagram">
+            <i class="bi bi-instagram"></i>
+          </button>
+
+          <button class="rounded-pill email" onclick="sendEmail()" title="Send Email" aria-label="Send Email">
+            <i class="bi bi-envelope"></i>
+          </button>
+
+          <button class="rounded-pill twitter" onclick="visitTwitter()" title="Visit Twitter" aria-label="Visit Twitter">
+            <i class="bi bi-twitter"></i>
+          </button>
+
+          <button class="rounded-pill linkedin" onclick="visitLinkedIn()" title="Visit LinkedIn" aria-label="Visit LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </button>
+        </div>
+
+        <hr class="footer-divider" />
+        <p class="copyright">
+          &copy; 2025 Shiva7Strome&Code | All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Buttons Script -->
+  <script>
+    function visitInstagram() {
+      window.open("https://www.instagram.com/", "_blank");
+    }
+    function sendEmail() {
+      window.location.href = "mailto:superadmin@fairdebt.in";
+    }
+    function visitTwitter() {
+      window.open("https://twitter.com/", "_blank");
+    }
+    function visitLinkedIn() {
+      window.open("https://www.linkedin.com/", "_blank");
+    }
+  </script>
+</footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+        let navMenu = document.getElementById("navbarNav");
+        if (navMenu.classList.contains("show")) {
+          navMenu.classList.remove("show");
+        } else {
+          navMenu.classList.add("show");
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      let progressBars = document.querySelectorAll(".progress-bar");
+
+      function animateProgressBars() {
+          progressBars.forEach(bar => {
+              let width = bar.getAttribute("data-width");
+              bar.style.width = width; // Animate to the target width
+          });
+      }
+
+      // Trigger animation when section is visible
+      let expertiseSection = document.querySelector("#expertise-showcase");
+      let observer = new IntersectionObserver(entries => {
+          if (entries[0].isIntersecting) {
+              animateProgressBars();
+          }
+      }, { threshold: 0.5 });
+
+      observer.observe(expertiseSection);
+  });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (Include Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+
+    <!-- Custom JS File Linking -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

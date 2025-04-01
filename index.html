@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiva7Strome&Code</title>
+    <link rel="icon" type="image/png" href="/images/company_logo.png">
+
+    <!-- Bootstrap CSS CDN Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icon CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+
+  <body style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <!-- Navbar -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img src="images/company_logo.png" alt="Company Logo" class="navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Navbar Ends Here -->
+
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <video class="d-block w-100 lazy-video" autoplay loop muted playsinline preload="auto" poster="images/1.jpg">
+        <source src="images/1.mp4" type="video/mp4">
+        <source src="images/1.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <div class="carousel-container">
+        <h2 class="home-title"><span class="highlight">Shiva7Strome&Code</span></h2>
+        <h2>Empowering Businesses with Modern IT Solutions</h2>
+        <p>From Web Development to IT Support, we provide innovative tech solutions for a digital future.</p>
+        <a href="contact.html" class="btn-get-started">Get Started</a>
+      </div>  
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <video class="d-block w-100 lazy-video" autoplay loop muted playsinline preload="auto" poster="images/2.jpg">
+        <source src="images/2.mp4" type="video/mp4">
+        <source src="images/2.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <div class="carousel-container">
+        <h2 class="home-title"><span class="highlight">Shiva7Strome&Code</span></h2>
+        <h2>Building Scalable & Secure Digital Platforms</h2>
+        <p>We specialize in robust, scalable, and secure software & web applications tailored to your needs.</p>
+        <a href="contact.html" class="btn-get-started">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <video class="d-block w-100 lazy-video" autoplay loop muted playsinline preload="auto" poster="images/3.jpg">
+        <source src="images/3.mp4" type="video/mp4">
+        <source src="images/3.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <div class="carousel-container">
+        <h2 class="home-title"><span class="highlight">Shiva7Strome&Code</span></h2>
+        <h2>Reliable IT Support & Website Maintenance</h2>
+        <p>Ensuring your business operates seamlessly with 24/7 IT and web support.</p>
+        <a href="contact.html" class="btn-get-started">Get Started</a>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="heading text-center mb-5">
+      <h3>About Us</h3>
+  </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="content">
+              <p>
+                  <strong>Shiva7Strome&Code</strong> is a technology-driven company offering premium <b>Web Development, Software Development, IT Support, and Website Maintenance</b> services. 
+                  Leveraging cutting-edge technology and <b>AI-powered solutions</b>, we help businesses <b>automate operations, enhance security, and scale efficiently</b> in the digital landscape.
+              </p>
+              <p>
+                  Our expertise spans across <b>AI-driven applications, cloud computing, cybersecurity, and digital transformation</b>, ensuring businesses stay ahead of the competition.
+              </p>
+
+              <div class="services-container">
+                  <ul class="services-list">
+                      <li><strong>✅Full-stack Web & Software Development</strong> 
+                          <p>Scalable and secure applications for enterprises & startups.</p>
+                      </li>
+                      <li><strong>🔧IT Infrastructure & Technical Support</strong> 
+                          <p>From cloud solutions to on-premise security & troubleshooting.</p>
+                      </li>
+                      <li><strong>📈Scalable Business Solutions</strong> 
+                          <p>AI-powered analytics, CRM integrations, and automation.</p>
+                      </li>
+                      <li><strong>🌍Digital Transformation & AI-powered Integrations</strong> 
+                          <p>Future-proofing businesses with advanced technologies.</p>
+                      </li>
+                      <li><strong>🔐Cybersecurity & Data Protection</strong> 
+                          <p>Proactive security solutions to safeguard businesses from threats.</p>
+                      </li>
+                      <li><strong>☁️Cloud Computing & DevOps</strong> 
+                          <p>AWS, Azure, and CI/CD pipeline optimization.</p>
+                      </li>
+                      <li><strong>📊AI & Machine Learning Solutions</strong> 
+                          <p>Implementing smart automation, predictive analytics, and NLP-based AI chatbots.</p>
+                      </li>
+                      <li><strong>🚀Blockchain & Web3 Development</strong> 
+                          <p>Secure decentralized applications and smart contract development.</p>
+                      </li>
+                      <li><strong>🛒E-commerce Solutions</strong> 
+                          <p>Custom-built platforms, AI-driven product recommendations, and seamless payment integrations.</p>
+                      </li>
+                      <li><strong>📱Mobile App Development</strong> 
+                          <p>Building Android & iOS applications for businesses & startups.</p>
+                      </li>
+                      <li><strong>🖥️Custom Software Development</strong> 
+                          <p>Tailored solutions for finance, healthcare, and logistics industries.</p>
+                      </li>
+                      <li><strong>📡IoT & Embedded Systems</strong> 
+                          <p>Smart device integration for industrial & consumer applications.</p>
+                      </li>
+                      <li><strong>🎯UI/UX Design & Branding</strong> 
+                          <p>Crafting user-friendly experiences with a strong brand identity.</p>
+                      </li>
+                      <li><strong>💰FinTech & Payment Gateway Integration</strong> 
+                          <p>Secure and seamless digital payment processing.</p>
+                      </li>
+                  </ul>
+              </div>
+
+              <p style="text-align: center;">
+                  We stay ahead of industry trends to provide <b>cutting-edge digital solutions</b> that help businesses grow, innovate, and <b>maximize operational efficiency</b>.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="container section-title">
+      <div class="heading text-center">
+          <h3>Our Services</h3>
+          <p>Unlock Your Business Potential with Our Digital Solutions</p>
+      </div>
+
+      <div class="service-row">
+          <div class="service-box text-center">
+              <h3>Web Development</h3>
+              <p>
+                  ➤ Custom-built <b>websites & web applications</b> optimized for speed & performance. <br>
+                  ➤ Fully <b>responsive & user-friendly designs</b> for all devices. <br>
+                  ➤ Expertise in <b>e-commerce (Shopify, WooCommerce) & CMS (WordPress, Joomla, Drupal)</b>. <br>
+                  ➤ Development of <b>progressive web apps (PWAs) & single-page applications (SPAs)</b>.
+              </p>
+          </div>
+
+          <div class="service-box text-center">
+              <h3>Software Development</h3>
+              <p>
+                  ➤ <b>Custom software solutions</b> tailored to business needs. <br>
+                  ➤ <b>Enterprise-level applications, SaaS platforms & automation tools</b>. <br>
+                  ➤ Seamless integration with <b>third-party APIs, CRM & ERP systems</b>. <br>
+                  ➤ Scalable solutions using <b>AI, machine learning & cloud computing</b>.
+              </p>
+          </div>
+
+          <div class="service-box text-center">
+              <h3>Website Maintenance</h3>
+              <p>
+                  ➤ <b>24/7 monitoring & uptime optimization</b> to prevent downtime. <br>
+                  ➤ <b>Security updates, bug fixes & content management</b>. <br>
+                  ➤ <b>Performance enhancements</b> to improve speed & user experience. <br>
+                  ➤ SEO optimization & <b>mobile responsiveness improvements</b>.
+              </p>
+          </div>
+
+          <div class="service-box text-center">
+              <h3>IT Support & Consulting</h3>
+              <p>
+                  ➤ <b>Network management, security audits & troubleshooting</b>. <br>
+                  ➤ <b>Cloud migration, DevOps automation & compliance consulting</b>. <br>
+                  ➤ Cybersecurity assessments to protect against <b>threats & vulnerabilities</b>. <br>
+                  ➤ End-to-end IT infrastructure optimization for <b>scalability & efficiency</b>.
+              </p>
+          </div>
+      </div>
+
+      <div class="text-center mt-4">
+          <a href="services.html" class="read-more"><span>Explore More</span> →</a>
+      </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="expertise mt-3" id="service">
+  <div class="container">
+    <div class="heading text-center">
+      <h3>Why Choose</h3> 
+      <h3>Shiva7Strome&Code?</h3>
+    </div>
+
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4">
+        <div class="service-card1">
+          <div class="img">
+            <img src="images/security.png" alt="Trusted Expertise" class="img-fluid" />
+          </div>
+          <div class="content mt-3">
+            <h4 class="text-center">Trusted Expertise</h4>
+            <p class="text-center">Years of experience in IT solutions, security, and software innovation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-10 col-md-4">
+        <div class="service-card1">
+          <div class="img">
+            <img src="images/profit.png" alt="Cost-Effective Solutions" class="img-fluid" />
+          </div>
+          <div class="content mt-3">
+            <h4 class="text-center">Scalable & Secure</h4>
+            <p class="text-center">We build future-proof, scalable, and highly secure digital products.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3 class="fw-bold">Let's Build Something Great Together</h3>
+      <p>Have questions or need a custom IT solution? We’re here to help!</p>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-5 contact-details text-center">
+        <p class="fw-bold">Email: shiva7stromecode@gmail.com</p>
+        <p class="fw-bold">Website: <a href="#">www.shiva7strome.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Success Dialog Box -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Success!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for contacting us! Your details have been successfully submitted.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize EmailJS
+    emailjs.init("YHPpA8WKsdQMlZF0u");
+
+    // JavaScript for form submission
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Get form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const mobile = document.getElementById("mobile").value;
+      const message = document.getElementById("message").value;
+
+      // EmailJS email parameters
+      const emailParams = {
+        from_name: name,
+        email: email,
+        mobile: mobile,
+        message: message,
+      };
+
+      // Send email using EmailJS
+      emailjs
+        .send("service_i15deir", "template_knn971z", emailParams)
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            // Show success dialog box
+            var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+            myModal.show();
+
+            // Reset the form after submission
+            document.getElementById("contactForm").reset(); 
+          },
+          (error) => {
+            console.error("FAILED...", error);
+            alert("There was an error submitting your details. Please try again.");
+          }
+        );
+    });
+  </script>
+
+    <!-- Back to Top Button -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+<!-- Footer Section Starts -->
+<footer class="text-center text-muted py-4">
+  <div class="footer">
+    <div class="footer-container">
+
+      <!-- Company Logo & Name -->
+      <div class="footer-brand">
+        <img
+          src="images/company_logo.png"
+          alt="Company Logo"
+          class="footer-logo"
+        />
+        <h3 class="pt-2" data-aos="fade-up">
+          Shiva7Strome&Code
+        </h3>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="link-group d-flex flex-wrap justify-content-center align-items-center" data-aos="fade-up">
+        <a href="index.html" class="mx-2"><i class="bi bi-house-door"></i> Home</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="about.html" class="mx-2"><i class="bi bi-info-circle"></i> About</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="services.html" class="mx-2"><i class="bi bi-people"></i> Services</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="contact.html" class="mx-2"><i class="bi bi-envelope"></i> Contact Us</a>
+      </div>
+
+      <!-- Footer Sections -->
+      <div class="container">
+        <div class="footer-sections">
+          <!-- Services -->
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="center">
+              <li><a href="web_dev.html">Web Development</a></li>
+              <li><a href="software_dev.html">Software Development</a></li>
+              <li><a href="web_men.html">Website Maintenance</a></li>
+              <li><a href="it_support.html">IT Support & Consulting</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="footer-section">
+            <h3>Our Company</h3>
+            <ul class="center">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul class="center">
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+              <li><a href="corporate.html">Corporate Information</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-section contactus">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-globe"></i> <a href="http://shiva7stromecode.in" target="_blank">www.shiva7stromecode.in</a></p>
+            <p><i class="fas fa-envelope"></i><a href="mailto:shiva7stromecode@gmail.com">shiva7stromecode@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links mt-5" data-aos="fade-up">
+          <button class="rounded-pill instagram" onclick="visitInstagram()" title="Visit Instagram" aria-label="Visit Instagram">
+            <i class="bi bi-instagram"></i>
+          </button>
+
+          <button class="rounded-pill email" onclick="sendEmail()" title="Send Email" aria-label="Send Email">
+            <i class="bi bi-envelope"></i>
+          </button>
+
+          <button class="rounded-pill twitter" onclick="visitTwitter()" title="Visit Twitter" aria-label="Visit Twitter">
+            <i class="bi bi-twitter"></i>
+          </button>
+
+          <button class="rounded-pill linkedin" onclick="visitLinkedIn()" title="Visit LinkedIn" aria-label="Visit LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </button>
+        </div>
+
+        <hr class="footer-divider" />
+        <p class="copyright">
+          &copy; 2025 Shiva7Strome&Code | All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Buttons Script -->
+  <script>
+    function visitInstagram() {
+      window.open("https://www.instagram.com/", "_blank");
+    }
+    function sendEmail() {
+      window.location.href = "mailto:superadmin@fairdebt.in";
+    }
+    function visitTwitter() {
+      window.open("https://twitter.com/", "_blank");
+    }
+    function visitLinkedIn() {
+      window.open("https://www.linkedin.com/", "_blank");
+    }
+  </script>
+</footer>
+
+        <!-- JavaScript for Mobile Menu Toggle -->
+        <script>
+          document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+            let navMenu = document.getElementById("navbarNav");
+            if (navMenu.classList.contains("show")) {
+              navMenu.classList.remove("show");
+            } else {
+              navMenu.classList.add("show");
+            }
+          });
+        </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (Include Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script>
+      // WebGL Particle Background using Three.js
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.136/build/three.module.js";
+
+      let scene, camera, renderer, stars, starGeo;
+
+      function init() {
+          scene = new THREE.Scene();
+          camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+          camera.position.z = 1;
+
+          renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero-canvas'), alpha: true });
+          renderer.setSize(window.innerWidth, window.innerHeight);
+          document.body.appendChild(renderer.domElement);
+
+          starGeo = new THREE.Geometry();
+          for (let i = 0; i < 6000; i++) {
+              let star = new THREE.Vector3(
+                  Math.random() * 600 - 300,
+                  Math.random() * 600 - 300,
+                  Math.random() * 600 - 300
+              );
+              starGeo.vertices.push(star);
+          }
+
+          let sprite = new THREE.TextureLoader().load("https://threejs.org/examples/textures/sprites/snowflake1.png");
+          let starMaterial = new THREE.PointsMaterial({
+              color: 0xaaaaaa,
+              size: 0.7,
+              map: sprite
+          });
+
+          stars = new THREE.Points(starGeo, starMaterial);
+          scene.add(stars);
+
+          animate();
+      }
+
+      function animate() {
+          starGeo.vertices.forEach((star) => {
+              star.z += 0.2;
+              if (star.z > 300) {
+                  star.z -= 600;
+              }
+          });
+          starGeo.verticesNeedUpdate = true;
+          renderer.render(scene, camera);
+          requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("load", init);
+
+    </script>
+
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Custom JS File Linking -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

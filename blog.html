@@ -1,0 +1,398 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Shiva7Strome&Code</title>
+    <link rel="icon" type="image/png" href="/images/company_logo.png">
+  
+      <!-- Bootstrap CSS CDN Link -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+  
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style1.css" />
+  
+      <!-- Google Font Link -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+  
+      <!-- Bootstrap Icon CDN Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      />
+  
+      <!-- AOS Library for Animations -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+      <!-- Add Font Awesome for icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+      <!-- jQuery CDN Link -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+      <!-- EmailJS Library -->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <style>
+        .modal-content {
+          background-color: #fff;
+          margin:10% auto;
+          padding: 25px;
+          width: 50%;
+          max-width: 600px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          position: relative;
+          animation: fadeIn 0.3s ease-in-out;
+          }
+  
+          /* Responsive Design */
+          @media (max-width: 768px) {
+              .modal-content {
+                  width: 80%;
+                  padding: 20px;
+              }
+          }
+      
+          @media (max-width: 480px) {
+              .modal-content {
+                  width: 90%;
+                  padding: 15px;
+              }
+          }
+      
+          /* Smooth fade-in animation */
+          @keyframes fadeIn {
+              from {
+                  opacity: 0;
+                  transform: translateY(-20px);
+              }
+              to {
+                  opacity: 1;
+                  transform: translateY(0);
+              }
+          }
+      </style>
+    </head>
+  
+    <body style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <!-- Navbar -->
+      <nav id="navbar-top" class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <img src="images/company_logo.png" alt="Company Logo" class="navbar-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+  <!-- Navbar Ends Here -->
+
+  <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Shiva7Strome&Code Blog</h1>
+        <p>Insights and updates on IT Support & Consulting Services</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content-box">
+
+        <!-- Featured Post Section -->
+        <section class="featured-post light-bg">
+            <h2>Featured: The Role of AI in Business Optimization</h2>
+            <p class="post-meta">Posted on February 15, 2025 | By Admin</p>
+            <p>AI is transforming industries by improving efficiency, automating tasks, and providing insights that drive strategic decisions. Learn how AI-powered analytics can optimize your business operations...</p>
+            <a href="#" class="blg-button" onclick="openModal('modal1')">Read More</a>
+        </section><br>
+
+        <!-- Blog Posts Section -->
+        <main class="blog-posts light-bg">
+            <article>
+                <h2>Unlocking Potential with Full-stack Web & Software Development</h2>
+                <p class="post-meta">Posted on January 16, 2025 | By Admin</p>
+                <p>Discover how scalable and secure applications can drive success for enterprises and startups. We build custom web applications tailored to your business needs...</p>
+                <a href="#" class="blg-button" onclick="openModal('modal2')">Read More</a>
+            </article><br>
+
+            <article>
+                <h2>IT Infrastructure & Technical Support: Securing Your Business</h2>
+                <p class="post-meta">Posted on January 14, 2025 | By Admin</p>
+                <p>From cloud solutions to on-premise security, our IT support services ensure your infrastructure runs smoothly and securely, enhancing productivity...</p>
+                <a href="#" class="blg-button" onclick="openModal('modal3')">Read More</a>
+            </article><br>
+
+            <article>
+                <h2>Scalable Business Solutions: AI-powered Analytics & Automation</h2>
+                <p class="post-meta">Posted on January 10, 2025 | By Admin</p>
+                <p>We offer AI-driven solutions that help businesses scale by automating operations, integrating CRM systems, and providing data-driven insights...</p>
+                <a href="#" class="blg-button" onclick="openModal('modal4')">Read More</a>
+            </article><br>
+
+            <article>
+                <h2>Blockchain & Web3 Development: Decentralized Innovation</h2>
+                <p class="post-meta">Posted on January 5, 2025 | By Admin</p>
+                <p>Explore how decentralized applications and smart contract development are transforming industries. We build secure blockchain solutions for the future...</p>
+                <a href="#" class="blg-button" onclick="openModal('modal5')">Read More</a>
+            </article><br>
+        </main>
+
+        <!-- Sidebar Section -->
+        <aside class="sidebar light-bg">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">AI-Powered Business Solutions</a></li>
+                <li><a href="#">Securing Your IT Infrastructure</a></li>
+                <li><a href="#">E-commerce Solutions for Modern Businesses</a></li>
+                <li><a href="#">Building Scalable Web Applications</a></li>
+                <li><a href="#">How Blockchain is Transforming Business</a></li>
+            </ul>
+
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Full-stack Development</a></li>
+                <li><a href="#">Cloud Computing</a></li>
+                <li><a href="#">AI & Machine Learning</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">Blockchain & Web3</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>The Role of AI in Business Optimization</h2>
+            <p>AI is revolutionizing how businesses operate by providing smarter solutions for automation, analytics, and decision-making...</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Unlocking Potential with Full-stack Web & Software Development</h2>
+            <p>Our full-stack development services create customized, secure applications designed to scale with your business...</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>IT Infrastructure & Technical Support: Securing Your Business</h2>
+            <p>Our IT infrastructure services ensure your systems are optimized, secure, and up-to-date, enabling smooth business operations...</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Scalable Business Solutions: AI-powered Analytics & Automation</h2>
+            <p>Implementing AI-powered analytics, CRM integrations, and automation strategies helps businesses scale efficiently and optimize operations...</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Blockchain & Web3 Development: Decentralized Innovation</h2>
+            <p>We develop secure decentralized applications and smart contracts, empowering businesses to take advantage of blockchain technology...</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+  <!-- JavaScript for Modal Functionality -->
+  <script>
+      function openModal(id) {
+          document.getElementById(id).style.display = "block";
+      }
+      function closeModal(id) {
+          document.getElementById(id).style.display = "none";
+      }
+  </script> 
+
+    <script src="script.js"></script>
+
+<!-- Footer Section Starts -->
+<footer class="text-center text-muted py-4">
+  <div class="footer">
+    <div class="footer-container">
+
+      <!-- Company Logo & Name -->
+      <div class="footer-brand">
+        <img
+          src="images/company_logo.png"
+          alt="Company Logo"
+          class="footer-logo"
+        />
+        <h3 class="pt-2" data-aos="fade-up">
+          Shiva7Strome&Code
+        </h3>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="link-group d-flex flex-wrap justify-content-center align-items-center" data-aos="fade-up">
+        <a href="index.html" class="mx-2"><i class="bi bi-house-door"></i> Home</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="about.html" class="mx-2"><i class="bi bi-info-circle"></i> About</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="services.html" class="mx-2"><i class="bi bi-people"></i> Services</a>
+        <span class="mx-2 text-white">|</span>
+        <a href="contact.html" class="mx-2"><i class="bi bi-envelope"></i> Contact Us</a>
+      </div>
+
+      <!-- Footer Sections -->
+      <div class="container">
+        <div class="footer-sections">
+          <!-- Services -->
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="center">
+              <li><a href="web_dev.html">Web Development</a></li>
+              <li><a href="software_dev.html">Software Development</a></li>
+              <li><a href="web_men.html">Website Maintenance</a></li>
+              <li><a href="it_support.html">IT Support & Consulting</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="footer-section">
+            <h3>Our Company</h3>
+            <ul class="center">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul class="center">
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+              <li><a href="corporate.html">Corporate Information</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-section contactus">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-globe"></i> <a href="http://shiva7stromecode.in" target="_blank">www.shiva7stromecode.in</a></p>
+            <p><i class="fas fa-envelope"></i><a href="mailto:shiva7stromecode@gmail.com">shiva7stromecode@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links mt-5" data-aos="fade-up">
+          <button class="rounded-pill instagram" onclick="visitInstagram()" title="Visit Instagram" aria-label="Visit Instagram">
+            <i class="bi bi-instagram"></i>
+          </button>
+
+          <button class="rounded-pill email" onclick="sendEmail()" title="Send Email" aria-label="Send Email">
+            <i class="bi bi-envelope"></i>
+          </button>
+
+          <button class="rounded-pill twitter" onclick="visitTwitter()" title="Visit Twitter" aria-label="Visit Twitter">
+            <i class="bi bi-twitter"></i>
+          </button>
+
+          <button class="rounded-pill linkedin" onclick="visitLinkedIn()" title="Visit LinkedIn" aria-label="Visit LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </button>
+        </div>
+
+        <hr class="footer-divider" />
+        <p class="copyright">
+          &copy; 2025 Shiva7Strome&Code | All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Buttons Script -->
+  <script>
+    function visitInstagram() {
+      window.open("https://www.instagram.com/", "_blank");
+    }
+    function sendEmail() {
+      window.location.href = "mailto:superadmin@fairdebt.in";
+    }
+    function visitTwitter() {
+      window.open("https://twitter.com/", "_blank");
+    }
+    function visitLinkedIn() {
+      window.open("https://www.linkedin.com/", "_blank");
+    }
+  </script>
+</footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      document.getElementById("mobileMenuToggle").addEventListener("click", function () {
+        let navMenu = document.getElementById("navbarNav");
+        if (navMenu.classList.contains("show")) {
+          navMenu.classList.remove("show");
+        } else {
+          navMenu.classList.add("show");
+        }
+      });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (Include Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Custom JS File Linking -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
