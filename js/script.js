@@ -10,11 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function autoSlide() {
-      if (slides.length > 0) {
-        slides[slideIndex].classList.remove("active");
-        slideIndex = (slideIndex + 1) % slides.length;
-        slides[slideIndex].classList.add("active");
-      }
+      slides[slideIndex].classList.remove("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
     }
 
     setInterval(autoSlide, 5000);
@@ -22,28 +20,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ================== jQuery Filter Functionality ====================
   if (typeof $ !== "undefined") {
-    $(".filter-item").click(function () {
-      const value = $(this).attr("data-filter");
-      if (value === "all") {
-        $(".post").show(1000);
-      } else {
-        $(".post").not("." + value).hide(1000);
-        $(".post").filter("." + value).show(1000);
-      }
+    $(".filter-item").on("click", function () {
+      const value = $(this).data("filter");
+      $(".post").fadeOut(300, function () {
+        if (value === "all") {
+          $(".post").fadeIn(300);
+        } else {
+          $(".post").filter("." + value).fadeIn(300);
+        }
+      });
     });
   }
 
   // ================== Sticky Navbar ====================
   const navbar = document.getElementById("navbar-top");
   if (navbar) {
+    let lastScrollY = 0;
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 50) {
-        navbar.classList.add("fixed-top");
-        document.body.classList.add("fixed-navbar");
-      } else {
-        navbar.classList.remove("fixed-top");
-        document.body.classList.remove("fixed-navbar");
-      }
+      requestAnimationFrame(() => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("fixed-top");
+          document.body.classList.add("fixed-navbar");
+        } else {
+          navbar.classList.remove("fixed-top");
+          document.body.classList.remove("fixed-navbar");
+        }
+      });
     });
   }
 
@@ -67,14 +69,12 @@ document.addEventListener("DOMContentLoaded", function () {
     aboutSection.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
 
     const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            aboutSection.style.opacity = "1";
-            aboutSection.style.transform = "translateY(0)";
-            observer.unobserve(aboutSection);
-          }
-        });
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          aboutSection.style.opacity = "1";
+          aboutSection.style.transform = "translateY(0)";
+          observer.unobserve(aboutSection);
+        }
       },
       { threshold: 0.3 }
     );
@@ -88,44 +88,36 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       let isValid = true;
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const mobile = document.getElementById("mobile").value.trim();
-      const message = document.getElementById("message").value.trim();
+      const fields = {
+        name: document.getElementById("name"),
+        email: document.getElementById("email"),
+        mobile: document.getElementById("mobile"),
+        message: document.getElementById("message"),
+      };
 
-      // Name validation
-      if (name === "") {
-        isValid = false;
-        document.getElementById("nameError").classList.remove("d-none");
-      } else {
-        document.getElementById("nameError").classList.add("d-none");
+      const errors = {
+        name: document.getElementById("nameError"),
+        email: document.getElementById("emailError"),
+        mobile: document.getElementById("mobileError"),
+        message: document.getElementById("messageError"),
+      };
+
+      // Validate inputs
+      if (fields.name.value.trim() === "") isValid = showError("name");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email.value.trim())) isValid = showError("email");
+      if (!/^[0-9]{10}$/.test(fields.mobile.value.trim())) isValid = showError("mobile");
+      if (fields.message.value.trim() === "") isValid = showError("message");
+
+      function showError(field) {
+        errors[field].classList.remove("d-none");
+        return false;
       }
 
-      // Email validation
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-        isValid = false;
-        document.getElementById("emailError").classList.remove("d-none");
-      } else {
-        document.getElementById("emailError").classList.add("d-none");
+      function hideError(field) {
+        errors[field].classList.add("d-none");
       }
 
-      // Mobile number validation
-      const mobilePattern = /^[0-9]{10}$/;
-      if (!mobilePattern.test(mobile)) {
-        isValid = false;
-        document.getElementById("mobileError").classList.remove("d-none");
-      } else {
-        document.getElementById("mobileError").classList.add("d-none");
-      }
-
-      // Message validation
-      if (message === "") {
-        isValid = false;
-        document.getElementById("messageError").classList.remove("d-none");
-      } else {
-        document.getElementById("messageError").classList.add("d-none");
-      }
+      Object.keys(fields).forEach((field) => hideError(field));
 
       if (isValid) {
         alert("Form submitted successfully!");
@@ -138,43 +130,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector("#navbarNav");
 
-  document.addEventListener("click", function (event) {
-    if (
-      navbarToggler &&
-      navbarCollapse &&
-      !navbarToggler.contains(event.target) &&
-      !navbarCollapse.contains(event.target)
-    ) {
-      navbarCollapse.classList.remove("show");
-    }
-  });
-
-  // ================== Read More Buttons ====================
-  const readMoreButtons = document.querySelectorAll(".read-more-btn");
-  if (readMoreButtons.length > 0) {
-    readMoreButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const content = this.nextElementSibling;
-        if (content) {
-          if (content.style.display === "block") {
-            content.style.display = "none";
-            this.textContent = "Read More";
-          } else {
-            content.style.display = "block";
-            this.textContent = "Read Less";
-          }
-        }
-      });
+  if (navbarToggler && navbarCollapse) {
+    document.addEventListener("click", function (event) {
+      if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+        navbarCollapse.classList.remove("show");
+      }
     });
   }
+
+  // ================== Read More Buttons ====================
+  document.querySelectorAll(".read-more-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+      this.textContent = content.style.display === "block" ? "Read Less" : "Read More";
+    });
+  });
 
   // ================== Footer Logo Animation ====================
   const logo = document.querySelector(".footer-logo");
   if (logo) {
-    logo.style.opacity = 0;
+    logo.style.opacity = "0";
     logo.style.transition = "opacity 1s ease-in-out";
     setTimeout(() => {
-      logo.style.opacity = 1;
+      logo.style.opacity = "1";
     }, 200);
   }
 });
