@@ -13,7 +13,6 @@ body, html {
 }
 
 /* Navbar Styling */
-/* Navbar Styling */
 #navbar-top {
     position: -ms-page; /* Changed from fixed to absolute so it scrolls up */
     top: 0;
@@ -57,7 +56,7 @@ body, html {
 
 /* Hover Effect */
 .navbar-nav a:hover {
-    color: #ff6600;
+    color: #70daf8;
     text-shadow: 0 0 10px #ffcc00;
 }
 
@@ -69,7 +68,7 @@ body, html {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #ffcc00;
+    background-color: #70daf8;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -80,7 +79,7 @@ body, html {
 
 /* Fixing Color Syntax Issue */
 .link-group a {
-    color: #1f7bfc; /* Fixed invalid color syntax */
+    color: #70daf8; /* Fixed invalid color syntax */
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
@@ -220,7 +219,7 @@ body, html {
 
 /* Read More Button */
 .read-more-btn {
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: #3d717f;
     color: #fff;
     border: none;
     padding: 12px;
@@ -234,7 +233,7 @@ body, html {
 }
 
 .read-more-btn:hover {
-    background: linear-gradient(135deg, #ff7b00, #6f34fe);
+    background: linear-gradient(135deg, #3d717f, #070707);
     transform: scale(1.05);
 }
 
@@ -299,7 +298,7 @@ body, html {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     border-radius: 15px;
-    background: linear-gradient(45deg, #FFD369, #FF5722);
+    background: linear-gradient(45deg, #3d717f, #eae8e8);
     z-index: -1;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -320,7 +319,7 @@ body, html {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #FFD369;
+    color: #3d717f;
 }
 
 /* Service Text */
@@ -366,15 +365,15 @@ body, html {
     padding: 12px 30px;
     font-size: 1rem;
     font-weight: bold;
-    color: #222;
+    color: white;
     border-radius: 8px;
-    background: linear-gradient(45deg, #FFD369, #FF5722);
+    background: #3d717f;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
 .read-more:hover {
-    background: linear-gradient(45deg, #FF5722, #FFD369);
+    background: linear-gradient(45deg, #3d717f, #070707);
     transform: translateY(-5px);
 }
 
@@ -487,7 +486,7 @@ body, html {
 .btn-get-started {
     display: inline-block;
     padding: 12px 28px;
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: #3d717f;
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
@@ -498,7 +497,7 @@ body, html {
 
 .btn-get-started:hover {
     transform: scale(1.1) translateY(-3px);
-    background: linear-gradient(135deg, #ff7b00, #6f34fe);
+    background: linear-gradient(135deg, #3d717f, #080808);
 }
 
 .highlight {
@@ -739,21 +738,6 @@ body, html {
     flex-wrap: wrap;
 }
 
-/* Read More Button */
-.read-more {
-    display: inline-block;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.read-more:hover {
-    background: linear-gradient(135deg, #ff7b00, #6f34fe);
-}
 
 /* Skill Section */
 .skill {
@@ -897,18 +881,18 @@ body, html {
 
 .blog .blogpost .read-more-btn {
     text-decoration: none;
-    color: #fca61f;
+    color: #3d717f;
     font-size: 1.1rem;
 }
 
 .blog .blogpost .read-more-btn:hover {
-    background: linear-gradient(135deg, #ff7b00, #6f34fe);
+    background: linear-gradient(135deg, #3d717f, #070707);
 }
 
 /* Styling modal group */
 .btn-c {
     margin-left: 94%;
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: linear-gradient(135deg, #3d717f, #070707);
     border: none;
     color: #fff;
     font-size: 2rem;
@@ -916,7 +900,7 @@ body, html {
 }
 
 .btn-c i {
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: linear-gradient(135deg, #3d717f, #070707);
 }
 
 .modal-body .content span {
@@ -950,13 +934,13 @@ body, html {
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: linear-gradient(135deg, #3d717f, #3d717f);
     border: none;
     transition: all 0.3s ease-in-out;
   }
   
   .btn-primary:hover {
-    background: linear-gradient(135deg, #ff7b00, #6f34fe);
+    background: linear-gradient(135deg, #3d717f, #070707);
   }
   
   .contact-card i {
@@ -968,7 +952,7 @@ body, html {
   }
 
   .text {
-    color: #ffb700;
+    color: #3d717f;
   }
   
 
@@ -1002,8 +986,7 @@ body, html {
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #f5fc1f;
-
+    color: #70daf8;
     transition: text-shadow 0.3s ease;
 }
 
@@ -1024,12 +1007,12 @@ body, html {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #f5fc1f;
+    background-color: #70daf8;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
 .link-group a:hover {
-    color: #f5fc1f;
+    color: #70daf8;
 }
 
 .link-group a:hover::after {
@@ -1052,7 +1035,7 @@ body, html {
 }
 
 .footer-section h3 {
-    color: #f5fc1f;
+    color: #70daf8;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -1081,12 +1064,12 @@ body, html {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #f5fc1f;
+    background-color: #70daf8;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #f5fc1f;
+    color: #70daf8;
 }
 
 .footer-section ul li a:hover::after {
@@ -1104,7 +1087,7 @@ body, html {
 }
 
 .footer-section.contactus i {
-    color: #f5fc1f;
+    color: #70daf8;
 }
 
 
@@ -1143,13 +1126,13 @@ body, html {
     font-size: 1.2rem;
     border: none;
     background-color: transparent;
-    color: #f5fc1f;
-    border: 2px solid #f5fc1f;
+    color: #070707;
+    border: 2px solid #070707;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links button:hover {
-    background-color: #f5fc1f;
+    background-color: #70daf8;
     color: #000;
     transform: scale(1.1);
 }
@@ -1232,7 +1215,7 @@ footer p {
     right: 40px;
     display: none;
     font-size: 1.4rem;
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: linear-gradient(135deg, #70daf8, #4a6b74);
     color: #fff;
     animation: pulse 3s infinite;
 }
@@ -1310,7 +1293,7 @@ footer p {
 /* Progress Bar */
 .progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #ffcc00, #ff6600);
+    background: linear-gradient(90deg, #80c2bc, #84f8f2);
     width: 0;  /* Default to 0, animated using JS */
     transition: width 1s ease-in-out;
 }
@@ -1331,80 +1314,111 @@ footer p {
 .services-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 50px;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
 }
 
 /* Service Row */
 .service-row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 /* Service Card */
 .service-card {
     flex: 1;
-    max-width: 48%;
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 25px;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    padding: 40px;
     text-align: center;
     transition: all 0.4s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #070707;
 }
 
-/* Hover Effect */
+/* Neon Border Effect */
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(90deg, #71a7a7, #c792c7, #e3eaea);
+    border-radius: 25px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: glow-border 3s infinite linear;
+}
+
+/* Hover Effects */
 .service-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-12px) scale(1.08);
+    box-shadow: 0px 15px 40px rgba(255, 0, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Show border effect on hover */
+.service-card:hover::before {
+    opacity: 1;
+}
+
+/* 3D Floating Effect */
+@keyframes neon-glow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
 }
 
 /* Service Card Image */
 .service-card img {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease-in-out;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.7s ease-in-out;
+    filter: drop-shadow(0px 10px 15px rgba(0, 255, 255, 0.3));
 }
 
 /* Image Hover Effect */
 .service-card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(12deg);
 }
 
 /* Service Title */
 .service-card h4 {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
+    font-weight: bold;
+    color: #669292;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
     transition: color 0.3s ease-in-out;
 }
 
 /* Title Hover Effect */
 .service-card:hover h4 {
-    color: #0056b3;
+    color: #070707;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-row {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
+    .service-card {
+        max-width: 95%;
+    }
 }
 
 /* Modal Styling */
@@ -1430,12 +1444,23 @@ footer p {
     width: 90%;
     max-width: 500px;
     text-align: center;
+    color: #fff;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     animation: slideIn 0.5s ease;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Close Button */
 .close {
+    position: absolute; /* Added for proper placement */
     top: 15px;
     right: 20px;
     font-size: 28px;
@@ -1460,8 +1485,6 @@ footer p {
         transform: scale(1);
     }
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -1488,7 +1511,7 @@ footer p {
   }
 
   .footer a:hover {
-    color: #fca61f;
+    color: #abe5f6;
   }
 
   .social-icon {
@@ -1631,7 +1654,7 @@ footer p {
   }
 
   .custom-tab {
-    background: linear-gradient(135deg, #ff7b00, #ffb700);
+    background: linear-gradient(135deg, #3d717f, #070707);
     color: rgb(11, 11, 11) !important;
     border-radius: 25px;
     padding: 10px 20px;
@@ -1642,12 +1665,12 @@ footer p {
   }
 
   .custom-tab:hover {
-    background: linear-gradient(135deg, #ffb700, #ff7b00);
+    background: linear-gradient(135deg, #3d717f, #dcdcdc);
     color: white !important;
   }
 
   .custom-tab.active {
-    background: linear-gradient(135deg, #ffb700, #ff7b00) !important;
+    background: linear-gradient(135deg, #3d717f, #070707) !important;
     color: white !important;
     border: none;
   }
@@ -1655,3 +1678,16 @@ footer p {
   .nav-pills .nav-link {
     outline: none;
   }
+
+  .bi-send-fill {
+    color: #3d717f; 
+    }
+
+    .bi-globe {
+    color: #3d717f;
+    }
+
+    .bi-geo-alt-fill {
+        color: #3d717f;
+    }
+    
