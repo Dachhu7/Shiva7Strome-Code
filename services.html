@@ -73,7 +73,6 @@
     </nav>
 <!-- Navbar Ends Here -->
 
-
 <!-- Expertise Section Starts -->
 <section class="expertise" id="service">
   <div class="container">
@@ -88,17 +87,18 @@
       <div class="service-row">
         <!-- Web Development -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/web_dev.png" alt="Web Development">
+          <img src="images/web_dev.png" alt="Web Development" class="service-icon">
           <h4>Web Development</h4>
-          <p>We create responsive, high-performance websites tailored to your business needs.  
-             Our team specializes in front-end, back-end, and full-stack web development.  
-             We deliver custom solutions, including corporate websites, portals, and CMS platforms.</p>
+          <p>We create responsive, high-performance websites tailored to your business needs.
+            Our team specializes in front-end, back-end, and full-stack development.
+            We build corporate websites, portals, CMS platforms, and custom solutions.
+            Delivering seamless, scalable, innovative experiences.</p>
           <button class="read-more-btn" onclick="openModal('modal1')">Read More</button>
         </div>
 
         <!-- Software Development -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/software_dev.png" alt="Software Development">
+          <img src="images/software_dev.png" alt="Software Development" class="service-icon">
           <h4>Software Development</h4>
           <p>From desktop applications to enterprise-grade software, we build scalable solutions.  
              Our software development expertise covers automation, SaaS applications, and cloud-based platforms.  
@@ -110,7 +110,7 @@
       <div class="service-row">
         <!-- Website Maintenance -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/website_maintenance.png" alt="Website Maintenance">
+          <img src="images/website_maintenance.png" alt="Website Maintenance" class="service-icon">
           <h4>Website Maintenance</h4>
           <p>Ensure your website stays secure, updated, and fully functional.  
              We offer regular updates, performance optimization, and security patches.  
@@ -120,7 +120,7 @@
 
         <!-- IT Support & Consulting -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/it_support.png" alt="IT Support & Consulting">
+          <img src="images/it_support.png" alt="IT Support & Consulting" class="service-icon">
           <h4>IT Support & Consulting</h4>
           <p>We provide expert IT consulting, troubleshooting, and managed services.  
              Our solutions range from cloud management to on-site IT support.  
@@ -132,7 +132,7 @@
       <div class="service-row">
         <!-- E-commerce Solutions -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/ecommerce_solutions.png" alt="E-commerce Solutions">
+          <img src="images/ecommerce_solutions.png" alt="E-commerce Solutions" class="service-icon">
           <h4>E-commerce Solutions</h4>
           <p>Launch and manage your online store with our tailored e-commerce solutions.  
              We integrate secure payment gateways, user-friendly interfaces, and scalable platforms.  
@@ -142,7 +142,7 @@
 
         <!-- Cybersecurity & Data Protection -->
         <div class="service-card" data-aos="fade-up">
-          <img src="images/cybersecurity.png" alt="Cybersecurity & Data Protection">
+          <img src="images/cybersecurity.png" alt="Cybersecurity & Data Protection" class="service-icon">
           <h4>Cybersecurity & Data Protection</h4>
           <p>Protect your business with our top-tier cybersecurity solutions.  
              We specialize in penetration testing, data encryption, and threat monitoring.  
@@ -243,27 +243,6 @@
   </div>
 </div>
 
-<!-- JavaScript for Modals -->
-<script>
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "flex";
-}
-
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// Close modal when clicking outside of content
-window.onclick = function(event) {
-    document.querySelectorAll(".modal").forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-};
-</script>
-
-
 <!-- Case Studies / Success Stories Section -->
 <section class="case-studies" id="case-studies">
   <div class="container">
@@ -275,35 +254,34 @@ window.onclick = function(event) {
     <div class="case-study-container">
       <!-- Case Study 1: Web Development -->
       <div class="case-study-card" data-aos="fade-up">
-        <img src="images/case_study_1.png" alt="Case Study 1">
+        <img src="images/case_study_1.png" alt="Case Study 1" class="case-study-img">
         <h4>Revolutionizing Online Presence for Retailer</h4>
-        <p>We developed a custom e-commerce platform for a retail client, improving their online sales by <b>35%</b> in just three months. The site’s responsive design, speed optimization, and seamless checkout process led to a significant increase in conversions.</p>
+        <p>We developed a custom e-commerce platform for a retail client, improving their online sales by <b>35%</b> in just three months. The site's responsive design, speed optimization, and seamless checkout process led to a significant increase in conversions.</p>
       </div>
 
       <!-- Case Study 2: Software Development -->
       <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
-        <img src="images/case_study_2.png" alt="Case Study 2">
+        <img src="images/case_study_2.png" alt="Case Study 2" class="case-study-img">
         <h4>Streamlining Operations with Custom Software</h4>
         <p>We built a custom software solution for a logistics company, automating their order processing system and reducing manual errors by <b>50%</b>. The new system improved operational efficiency and reduced costs significantly.</p>
       </div>
 
       <!-- Case Study 3: Website Maintenance -->
       <div class="case-study-card" data-aos="fade-up" data-aos-delay="200">
-        <img src="images/case_study_3.png" alt="Case Study 3">
+        <img src="images/case_study_3.png" alt="Case Study 3" class="case-study-img">
         <h4>Enhancing Website Performance & Security</h4>
         <p>We conducted regular maintenance and optimization for a client's website, improving its page load speed by <b>40%</b> and fixing security vulnerabilities. This resulted in better user engagement and a lower bounce rate.</p>
       </div>
 
       <!-- Case Study 4: IT Support & Consulting -->
       <div class="case-study-card" data-aos="fade-up" data-aos-delay="300">
-        <img src="images/case_study_4.png" alt="Case Study 4">
+        <img src="images/case_study_4.png" alt="Case Study 4" class="case-study-img">
         <h4>Boosting IT Infrastructure for a Growing Firm</h4>
         <p>We provided ongoing IT support and consulting to a growing firm, helping them scale their infrastructure and improve network security. As a result, the firm experienced <b>zero downtime</b> and better collaboration across teams.</p>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Expertise Showcase Section -->
 <section id="expertise-showcase" class="expertise-showcase section" style="padding: 10px;">
@@ -367,18 +345,16 @@ window.onclick = function(event) {
           </div>
       </div>
   </div>
-
 </section>
 <!-- Expertise Showcase Section Ends -->
-
-    <!-- Back to Top Button -->
-    <button
-      type="button"
-      class="btn btn-floating btn-lg rounded-pill"
-      id="btn-back-to-top"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
+<!-- Back to Top Button -->
+<button
+  type="button"
+  class="btn btn-floating btn-lg rounded-pill"
+  id="btn-back-to-top"
+  >
+  <i class="bi bi-arrow-up"></i>
+</button>
 
 <!-- Footer Section Starts -->
 <footer class="text-center text-muted py-4">
@@ -445,7 +421,7 @@ window.onclick = function(event) {
           <!-- Contact -->
           <div class="footer-section contactus">
             <h3>Contact Us</h3>
-            <p><i class="fas fa-globe"></i> <a href="http://shiva7stromecode.in" target="_blank">www.shiva7stromecode.in</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://dachhu7.github.io/Shiva7Strome-Code/" target="_blank">www.shiva7stromecode.in</a></p>
             <p><i class="fas fa-envelope"></i><a href="mailto:shiva7stromecode@gmail.com">shiva7stromecode@gmail.com</a></p>
           </div>
         </div>
@@ -476,71 +452,128 @@ window.onclick = function(event) {
       </div>
     </div>
   </div>
-
-  <!-- Social Buttons Script -->
-  <script>
-    function visitInstagram() {
-      window.open("https://www.instagram.com/", "_blank");
-    }
-    function sendEmail() {
-      window.location.href = "mailto:superadmin@fairdebt.in";
-    }
-    function visitTwitter() {
-      window.open("https://twitter.com/", "_blank");
-    }
-    function visitLinkedIn() {
-      window.open("https://www.linkedin.com/", "_blank");
-    }
-  </script>
 </footer>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-      document.getElementById("mobileMenuToggle").addEventListener("click", function () {
-        let navMenu = document.getElementById("navbarNav");
-        if (navMenu.classList.contains("show")) {
-          navMenu.classList.remove("show");
-        } else {
-          navMenu.classList.add("show");
+<!-- JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- Main JavaScript -->
+<script>
+  // Initialize AOS animations
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  });
+
+  // Modal functions
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+    }
+  }
+  
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+  }
+  
+  // Close modal when clicking outside of content
+  window.addEventListener("click", function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  });
+
+  // Mobile menu toggle
+  document.addEventListener("DOMContentLoaded", function() {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarNav = document.getElementById("navbarNav");
+    
+    if (navbarToggler && navbarNav) {
+      navbarToggler.addEventListener("click", function() {
+        navbarNav.classList.toggle("show");
+      });
+    }
+  });
+
+  // Progress bar animation
+  document.addEventListener("DOMContentLoaded", function() {
+    const progressBars = document.querySelectorAll(".progress-bar");
+    
+    function animateProgressBars() {
+      progressBars.forEach(bar => {
+        const width = bar.getAttribute("data-width");
+        if (width) {
+          bar.style.width = width;
         }
       });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      let progressBars = document.querySelectorAll(".progress-bar");
-
-      function animateProgressBars() {
-          progressBars.forEach(bar => {
-              let width = bar.getAttribute("data-width");
-              bar.style.width = width; // Animate to the target width
-          });
-      }
-
-      // Trigger animation when section is visible
-      let expertiseSection = document.querySelector("#expertise-showcase");
-      let observer = new IntersectionObserver(entries => {
-          if (entries[0].isIntersecting) {
-              animateProgressBars();
-          }
-      }, { threshold: 0.5 });
-
+    }
+    
+    // Use IntersectionObserver to trigger animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateProgressBars();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    const expertiseSection = document.getElementById('expertise-showcase');
+    if (expertiseSection) {
       observer.observe(expertiseSection);
+    }
   });
-    </script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  // Back to top button
+  document.addEventListener("DOMContentLoaded", function() {
+    const backToTopButton = document.getElementById("btn-back-to-top");
+    
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+    
+    backToTopButton.addEventListener("click", function() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
 
-    <!-- Bootstrap JS (Include Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-
-    <!-- Custom JS File Linking -->
-    <script src="js/script.js"></script>
-  </body>
+  // Social buttons
+  function visitInstagram() {
+    window.open("https://www.instagram.com/", "_blank");
+  }
+  
+  function sendEmail() {
+    window.location.href = "mailto:shiva7stromecode@gmail.com";
+  }
+  
+  function visitTwitter() {
+    window.open("https://twitter.com/", "_blank");
+  }
+  
+  function visitLinkedIn() {
+    window.open("https://www.linkedin.com/", "_blank");
+  }
+</script>
+</body>
 </html>
